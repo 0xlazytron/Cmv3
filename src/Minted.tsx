@@ -390,7 +390,7 @@ const Minted = (props: HomeProps) => {
                                 <img
                                   className="wp-image-4647 avia-img-lazy-loading-not-4647 avia_image"
                                   src={currentPhoto ?? aw}
-                                  alt=""
+                                  alt="NFT Image"
                                   title={
                                     firstCollectible?.name ?? "Domein Bergen"
                                   }
@@ -479,7 +479,8 @@ const Minted = (props: HomeProps) => {
                             </div>
                           </section>
                           <div className=" avia-button-center">
-                            <a
+                            <div>
+                                  <a
                               className="avia-button-center  avia-size-small avia-position-center"
                               href="https://opensea.io/es/collection/grapevine-nftree"
                               target="_blank"
@@ -487,6 +488,16 @@ const Minted = (props: HomeProps) => {
                             >
                               Opensea
                             </a>
+                            <a
+                              className="avia-button-center  avia-size-small avia-position-center"
+                              href="https://www.magiceden.io/marketplace/EWq4d7vsvNevuH4e9NWghdppkXZABLGVRFsoygjtBVVn"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              Magiceden
+                            </a>
+                                  </div>
+                           
                           </div>
                         </div>
                       </div>

@@ -795,10 +795,6 @@ const Home = (props: HomeProps) => {
                             <h1 className="av-special-heading-tag ">
                               one more step&hellip;
                             </h1>
-                            {/* <div className="av-subheading av-subheading_below av_custom_color "
-													style={{fontSize:"15px"}}>
-													<p>You cannot mint a Golden Grapevine NFT.</p>
-												</div> */}
                             <div className="special-heading-border">
                               <div
                                 className="special-heading-inner-border"

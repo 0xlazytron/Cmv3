@@ -401,10 +401,7 @@ const Minted = (props: HomeProps) => {
                               <p style={{ textAlign: "center", color: "#000" }}>
                                 <a
                                   target={"_blank"}
-                                  href={
-                                    firstCollectible?.properties?.files[0]
-                                      ?.uri ?? "#!"
-                                  }
+                                  href={firstCollectible?.external_url ?? "#!"}
                                   rel="noreferrer"
                                 >
                                   Click here for a photo

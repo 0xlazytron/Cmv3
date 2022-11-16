@@ -61,7 +61,8 @@ const Minted = (props: HomeProps) => {
   const [isWLOnly, setIsWLOnly] = useState(false);
   const [collectibles, setCollectibles] = useState(Array<any>);
   const [firstCollectible, setFirstCollectible] = useState<any>();
-
+  const [currentPhoto, setCurrentPhoto] = useState("");
+  const [isPhoto, setIsPhoto] = useState(false);
   const [alertState, setAlertState] = useState<AlertState>({
     open: false,
     message: "",
@@ -318,6 +319,8 @@ const Minted = (props: HomeProps) => {
   }, []);
 
   async function getToken() {
+    // on phantom connect
+
     if (typeof window.solana !== "undefined") {
       const solana_connection = await window.solana.connect();
       try {
@@ -329,6 +332,8 @@ const Minted = (props: HomeProps) => {
         const first_nft = nfts[0].data;
         const uri = first_nft.uri;
         const metadata = await fetch(uri).then((res) => res.json());
+        setCurrentPhoto(metadata?.image);
+        setIsPhoto(false);
         setFirstCollectible(metadata);
         setCollectibles(nfts);
       } catch (error) {
@@ -384,7 +389,7 @@ const Minted = (props: HomeProps) => {
                               <div className="avia-image-overlay-wrap">
                                 <img
                                   className="wp-image-4647 avia-img-lazy-loading-not-4647 avia_image"
-                                  src={firstCollectible?.image ?? aw}
+                                  src={currentPhoto ?? aw}
                                   alt=""
                                   title={
                                     firstCollectible?.name ?? "Domein Bergen"
@@ -398,13 +403,29 @@ const Minted = (props: HomeProps) => {
                           <section className="av_textblock_section">
                             <div className="avia_textblock">
                               <p style={{ textAlign: "center", color: "#000" }}>
-                                <a
-                                  target={"_blank"}
-                                  href={firstCollectible?.external_url}
-                                  rel="noreferrer"
+                                <button
+                                  style={{
+                                    textDecoration: "underline",
+                                    backgroundColor: "transparent",
+                                    outline: "none",
+                                    color: "#cf511f",
+                                    border: "unset",
+                                  }}
+                                  onClick={(e) => {
+                                    e.preventDefault();
+                                    if (isPhoto) {
+                                      setCurrentPhoto(firstCollectible?.image);
+                                      setIsPhoto(false);
+                                    } else {
+                                      setCurrentPhoto(
+                                        firstCollectible?.external_url
+                                      );
+                                      setIsPhoto(true);
+                                    }
+                                  }}
                                 >
-                                  Click here for a photo
-                                </a>
+                                  Click here for a {isPhoto ? "NFT" : "photo"}
+                                </button>
                               </p>
                             </div>
                           </section>

@@ -352,14 +352,13 @@ const Minted = (props: HomeProps) => {
                 className="av-section-color-overlay"
                 style={{ opacity: "0.8", backgroundColor: "#ffffff" }}
               ></div>
-              <a
-                href="#!"
+              <span
                 title=""
                 className="scroll-down-link "
                 style={{ height: "40px", width: "40px" }}
               >
                 <img src={down} alt="" />
-              </a>
+              </span>
               <div className="container">
                 <main
                   role="main"
@@ -401,7 +400,7 @@ const Minted = (props: HomeProps) => {
                               <p style={{ textAlign: "center", color: "#000" }}>
                                 <a
                                   target={"_blank"}
-                                  href={firstCollectible?.external_url ?? "#!"}
+                                  href={firstCollectible?.external_url}
                                   rel="noreferrer"
                                 >
                                   Click here for a photo

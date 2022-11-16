@@ -1,0 +1,26 @@
+{
+  "key": 4,
+  "updateAuthority": "94qi2cuVCBVznEWp35eey8rhdR3bA5h2TFb7R7MM16Aw",
+  "mint": "GaqZzEBab3Yo6Hrrf6tFnQAWuN8oDZPaecuv86umgJ5a",
+  "data": {
+    "name": "Golden Grapevine #20",
+    "symbol": "GG",
+    "uri": "https://arweave.net/Vnj_e6-Q2BqdLbZWoHSewkOKmN-uKhacv0L1xGKuhOE",
+    "sellerFeeBasisPoints": 1000,
+    "creators": [
+      {
+        "address": "G2cS6svXux4Svjn81PG5BtvrataHSA7uuyWYr8YWMoCx",
+        "verified": 1,
+        "share": 0
+      },
+      {
+        "address": "EYCfNS6NU82zoyoQDbUHDS4ESacBhJGQ8rVSZkVVnQ5s",
+        "verified": 0,
+        "share": 100
+      }
+    ]
+  },
+  "primarySaleHappened": 1,
+  "isMutable": 1,
+  "editionNonce": null
+}

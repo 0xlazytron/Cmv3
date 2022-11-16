@@ -1,0 +1,30 @@
+{
+  "name": "Golden Grapevine #20",
+  "symbol": "GG",
+  "description": "This NFT is a proof of a lifetime ownership to a specific grapevine on Dutch organic vineyard: Domein Bergen. This NFT entitles you to an equivalent share of the vineyard's bottled yields.",
+  "seller_fee_basis_points": 1000,
+  "image": "https://arweave.net/3hBzre5Z502kJOVmy3aDrpnMD54lL3ogq3EL5ciP5oM?ext=png",
+  "external_url": "https://www.domeinbergen.nl/nft/assets/20.png",
+  "attributes": [
+    { "trait_type": "grapevariety", "value": "Muscaris" },
+    { "trait_type": "wine", "value": "white" },
+    { "trait_type": "plantyear", "value": "2022" },
+    { "trait_type": "row", "value": "5" },
+    { "trait_type": "position", "value": "72" }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "https://arweave.net/3hBzre5Z502kJOVmy3aDrpnMD54lL3ogq3EL5ciP5oM?ext=png",
+        "type": "image/png"
+      }
+    ],
+    "creators": [
+      {
+        "address": "6jkkGsCGxXbBeq74x7zFNHztQicgXDt2uJVaRbt4WrDc",
+        "share": 100
+      }
+    ],
+    "category": "image"
+  }
+}
